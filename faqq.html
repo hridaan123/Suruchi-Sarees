@@ -1,0 +1,136 @@
+<html>
+<title>FAQ</title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+$(".faq-list-item").click(function(){
+var $answer=$(this).find(".answer");
+if($answer.hasClass("open")){
+$answer.removeClass("open");
+$answer.slideUp();
+$(this).find("span").text("+");
+}else{
+$answer.addClass("open");
+$answer.slideDown();
+$(this).find("span").text("-");
+}
+});
+});
+</script>
+<style>
+.spanner{
+padding-right:50px;
+}
+.faqbox{
+background-color:#ABC8C7;
+opacity:0.8;
+border:2px solid #0D0221;
+font-family:"Times New Roman", Times, serif;
+padding:20px;
+color:#0D0221;
+}
+.answer{
+display:none;
+padding: 5px 0px;
+margin-bottom: 15px;
+}
+
+.faq-list-item{
+position:relative;
+margin:10px;
+border-bottom:1px solid #ccc;
+cursor:pointer;
+
+}
+
+.faq-list-item span{
+position: absolute;
+display:inline-block;
+top:15px;
+right:200px;
+font-size:20px;
+}
+.header{
+background-color:green;
+}
+.btn{
+border:2px dashed red;
+background-color:yellow;
+}
+.pader{
+padding-left:400px;
+}
+ul{list-style-type:none;magin:0;padding:0;}
+li{display:inline-block;}
+</style>
+</head>
+<body>
+<header class="header">
+<ul>
+<span class="pader"><button><li><a href="products.html"><b>Products</b></a></li></button><span class="spanner"></span>
+<button><li><a href="faqq.html"><b>FAQ</b></a></li></button><span class="spanner"></span>
+<button><li><a href="index.html"><b>Home</b></a></li></button><span class="spanner"></span>
+<button><li><a href="contact.html"><b>Contact Us<b></a></li></button>
+</ul>
+<center><h1>Faq</h1></center>
+</header>
+<div class="faqbox">
+<ul>
+<li class="faq-list-item">
+<h2>What Do We Do?</h2>
+<span>+</span>
+<div class="answer">
+<p>We make sarees, dress
+materials, yardages and
+dupattas on fabrics like tussar,
+chanderi, maheshwaris,
+mulberry, linen and kotas.
+</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li class="faq-list-item">
+<h2>From where do we source our fabrics?</h2>
+<span>+</span>
+<div class="answer">
+<p>We use hand woven fabrics sourced directly from
+weavers across the country. We combine these
+with artisanal process to create beautiful textiles.
+While giving close attention to every detail we
+believe in bringing out the beauty of handmade
+fabrics.
+</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li class="faq-list-item">
+<h2>Which crafts do we specialise in?</h2>
+<span>+</span>
+<div class="answer">
+<p>
+Some of the crafts that we 
+specialise in are 
+Kalamkari, Dabu, Hand Batik, 
+Kantha, Ajrak, Aplique, 
+Shiboris etc.
+</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li class="faq-list-item">
+<h2>Who are our clients?</h2>
+<span>+</span>
+<div class="answer">
+<p>
+Our clients include leading ethnic wear brands 
+and retail stores across the country.
+</p>
+</li>
+</ul>
+</div>
+</body>
+</html>
